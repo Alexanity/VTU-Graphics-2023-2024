@@ -8,10 +8,8 @@ public class MoveCube : MonoBehaviour
     public float moveSpeed = 5.0f; // Speed at which the cube moves.
 
     void Start()
-    {
-        
+    {   
     }
-
     // Update is called once per frame
     void Update()
     {
