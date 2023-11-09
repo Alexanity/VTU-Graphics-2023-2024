@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 501025265}
   - component: {fileID: 501025264}
   - component: {fileID: 501025263}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1275,7 +1275,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -8.27, y: 0, z: 13.35}
   m_LocalScale: {x: 1.12, y: 1.12, z: 1.12}
-  m_ConstrainProportionsScale: 1
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -1290,6 +1290,10 @@ PrefabInstance:
     - target: {fileID: 8963015720386823494, guid: 35d9e37ac8446e24d889641a30fad92b, type: 3}
       propertyPath: m_Name
       value: Plane
+      objectReference: {fileID: 0}
+    - target: {fileID: 8963015720386823494, guid: 35d9e37ac8446e24d889641a30fad92b, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8963015720386823512, guid: 35d9e37ac8446e24d889641a30fad92b, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1696,7 +1700,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a78a291aa6c90c44ab42977b175d8b14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseSensitivity: 150
+  mouseSensitivity: 200
   playerBody: {fileID: 1816706523}
 --- !u!43 &1424133279
 Mesh:
@@ -2185,7 +2189,7 @@ GameObject:
   - component: {fileID: 1626249347}
   - component: {fileID: 1626249346}
   - component: {fileID: 1626249345}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2510,7 +2514,7 @@ Transform:
   m_LocalRotation: {x: 0.5, y: -0.50000006, z: 0.5, w: -0.5}
   m_LocalPosition: {x: 12.99, y: 3.07, z: 18.11}
   m_LocalScale: {x: 1.24, y: 1.24, z: 1.24}
-  m_ConstrainProportionsScale: 1
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -2559,7 +2563,7 @@ GameObject:
   - component: {fileID: 1768606713}
   - component: {fileID: 1768606712}
   - component: {fileID: 1768606711}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CurvedStair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4046,7 +4050,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.04, y: 0, z: 18.07}
   m_LocalScale: {x: 1.24, y: 1.24, z: 1.24}
-  m_ConstrainProportionsScale: 1
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -4124,4 +4128,4 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   speed: 12
-  gravity: -9.81
+  gravity: -19.62

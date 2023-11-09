@@ -17,6 +17,8 @@ public class PlayerMovement : MonoBehaviour
 
     public float gravity = -9.81f;
 
+    public float jumpHeight = 3f;
+
     // Gradually picking up speed as the player falls down
     Vector3 velocity;
 
@@ -45,6 +47,12 @@ public class PlayerMovement : MonoBehaviour
         Vector3 move = transform.right * x + transform.forward * z; // movement based on where we're looking at
 
         controller.Move(move * speed * Time.deltaTime);
+
+        // Adding jump - "Jump" is another ready to use input
+        if(Input.GetButtonDown("Jump") && isGrounded)
+        {
+            velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
+        }
 
         // building up the velocity
         velocity.y += gravity * Time.deltaTime;
