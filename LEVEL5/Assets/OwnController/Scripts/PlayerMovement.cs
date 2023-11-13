@@ -36,13 +36,13 @@ public class PlayerMovement : MonoBehaviour
 
 
         // Input
-        float x = Input.GetAxis("Horizontal"); // W&S
-        float z = Input.GetAxis("Vertical");   // A&D
+        float x = Input.GetAxis("Horizontal"); // A&D   
+        float z = Input.GetAxis("Vertical");   // W&S
 
 // ------------------------------------------------------------------------------
         // Taking the input and putting it in the direction that we want to move
 
-        // Vector3 move = new Vector3 (x,0f,z); - this is globad movement, the player will be moving in the same direction no matter where the camera is facing
+        //Vector3 move = new Vector3 (x,0f,z); - this is globad movement, the player will be moving in the same direction no matter where the camera is facing
 
         Vector3 move = transform.right * x + transform.forward * z; // movement based on where we're looking at
 
