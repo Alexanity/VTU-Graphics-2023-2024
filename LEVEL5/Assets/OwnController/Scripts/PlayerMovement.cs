@@ -47,10 +47,12 @@ public class PlayerMovement : MonoBehaviour
         Vector3 move = transform.right * x + transform.forward * z; // movement based on where we're looking at
 
         controller.Move(move * speed * Time.deltaTime);
+        FindObjectOfType<AudioManager>().Play("Walk");
 
         // Adding jump - "Jump" is another ready to use input
         if(Input.GetButtonDown("Jump") && isGrounded)
         {
+            FindObjectOfType<AudioManager>().Play("Jump");
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
         }
 
