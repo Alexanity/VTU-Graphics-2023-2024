@@ -332,8 +332,8 @@ public class FirstPersonController : MonoBehaviour
         // Gets input and calls jump method
         if(enableJump && Input.GetKeyDown(jumpKey) && isGrounded)
         {
-            FindObjectOfType<AudioManager>().Play("Jump");
             Jump();
+            FindObjectOfType<AudioManager>().Play("Jump");
         }
 
         #endregion
